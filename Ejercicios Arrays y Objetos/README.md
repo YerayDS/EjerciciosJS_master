@@ -12,6 +12,7 @@ Escribe un programa que imprima todos los números pares del 1 al 50.
 **Ejemplo esperado:**
 2, 4, 6, 8, 10, ... 50
 
+
 ---
 
 ## Ejercicio 2: Contar del 1 al 5
@@ -30,6 +31,7 @@ Escribe un programa en JavaScript que muestre los números del 1 al 5 en la cons
 
 **Enunciado:**
 Escribe un programa en JavaScript que:
+
 - Pida una edad (simulada usando una variable).
 - Si la edad ingresada es menor o igual a 0, el programa mostrará un mensaje indicando que la edad no es válida.
 - Si la edad es válida (mayor que 0), el programa debe clasificarla en una de estas categorías:
@@ -39,7 +41,7 @@ Escribe un programa en JavaScript que:
   - 65 o más: "Eres un adulto mayor."
 
 **Requisitos:**
-- Usa estructuras `if-else` para las condiciones.
+- Usa estructuras if-else para las condiciones.
 - Simula la entrada de edad con una variable predefinida.
 - Si la edad no es válida, el programa debe mostrar un mensaje de error.
 
@@ -96,7 +98,6 @@ Crea un programa que calcule la suma de todos los números del 1 hasta un númer
 
 **Ejemplo esperado (si N = 5):**
 La suma de los números del 1 al 5 es: 15
-
 (Porque 1 + 2 + 3 + 4 + 5 = 15)
 
 ---
@@ -122,3 +123,43 @@ Escribe un programa que muestre en la consola todos los números del 1 al 30 que
 24
 27
 30
+
+---
+
+## 🧮 Ejercicio 8: Suma Condicional de Números
+
+**Enunciado:**
+Crea una función llamada `sumaCondicional` que reciba un array de números y sume solo aquellos que sean mayores que 10 y múltiplos de 3.
+
+**Requisitos:**
+- Usa `forEach()` para recorrer el array.
+- Devuelve la suma final.
+
+**Ejemplo:**
+```javascript
+sumaCondicional([5, 12, 18, 7, 21, 30]);  
+
+## 🔄 Ejercicio 9: Validar Propiedades en un Objeto
+
+**Enunciado:**
+Crea una función llamada `validarPropiedades` que reciba un objeto y un array de claves.
+
+- Devuelve `true` si el objeto contiene todas las claves del array, o `false` en caso contrario.
+- Usa `Object.keys()` y `for...in`.
+
+**Ejemplo:**
+```javascript
+validarPropiedades({ nombre: "Juan", edad: 30, ciudad: "Madrid" }, ["nombre", "edad"]);
+
+validarPropiedades({ nombre: "Juan", edad: 30 }, ["nombre", "ciudad"]);
+
+## 🔢 Ejercicio 10: Contar Caracteres en un Texto
+
+**Enunciado:**
+Crea una función flecha llamada `contarCaracteres` que reciba un texto (string) y devuelva un objeto que indique cuántas veces aparece cada carácter.
+
+- Usa un bucle `for...in` para recorrer el string como si fuera un array de caracteres (los strings en JS permiten esto).
+
+**Ejemplo:**
+```javascript
+contarCaracteres("programacion");
